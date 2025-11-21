@@ -1,0 +1,9 @@
+queue_rules:
+  - name: default
+    autoqueue: true
+    queue_conditions:
+      - base = main
+      - label = queue
+    merge_conditions:
+      - check-success = test
+    batch_max_wait_time: 5s
